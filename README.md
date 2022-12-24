@@ -26,8 +26,6 @@ python3 test_http_request.py
 
 # Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
 * Python 3.10.8 or higher
 * Python modules
 	* requests
