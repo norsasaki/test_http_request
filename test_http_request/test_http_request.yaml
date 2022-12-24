@@ -1,0 +1,19 @@
+cmd: curl -sS -k 
+proto: https
+domain: github.com
+user-agent: Mozilla/5.0 (test_http_request)
+header:
+  - [Pragma, "akamai-x-cache-on,akamai-x-check-cacheable"]
+cookie: 
+  - [login-token, xxxx]
+  - [AWSALBCORS, xxxx]
+result:
+  - http_code
+  - time_total
+  - content-type
+  - x-cache
+  - x-check-cacheable
+  - m#<title>(.+)</title>#
+config:
+  logLevel: debug
+  process: 8
